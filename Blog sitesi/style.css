@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff);
+}
+
+.header {
+    background: rgba(244, 244, 244, 0.9);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+}
+
+.logo-container img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li::before {
+    content: '•';
+    color: #000;
+    margin-right: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: transform 0.3s;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%) scaleX(0);
+}
+
+.nav-links a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.hero {
+    margin-top: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.hero-btn {
+    padding: 12px 20px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ff0000;
+}
+
+.blog-section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+.blog-section p {
+    margin-bottom: 20px;
+}
+
+.blog-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-card {
+    background: #ffe6e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-info {
+    text-align: right;
+    flex-basis: 200px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ff0000;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+-------------------/*HAKKİNDA KİSMİ*/-------------------
+
+.about-section,
+.hobbies-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+.about-content,
+.hobbies-content {
+    width: 48%;
+    padding: 30px;
+}
+
+.about-content h2,
+.hobbies-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-content p,
+.hobbies-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-image{
+width: 15%;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+
+}
+.hobbies-image {
+    width: 15%;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-photo,
+.hobbies-photo {
+    width: 100%;
+    border-radius: 50px;
+    margin-top: -260px;
+    margin-left: 800px;
+}
+
+
+
+-------------------/*PROJELER KİSMİ*/-------------------
+.projects-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px auto;
+}
+
+.projects-button {
+    text-align: center;
+}
+
+.hero-btn {
+    padding: 12px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 20px;
+}
+
+.projects-button a:hover {
+    background: #111;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+
+-------------------/*ANKET KİSMİ*/-------------------
+
+
+.survey-section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.survey-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 10rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #111;
+}
+
+.season-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.season-buttons label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.season-buttons input[type="radio"] {
+    display: none;
+}
+
+.season-buttons input[type="radio"] + span {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: 2px solid #333;
+    margin-right: 10px; 
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.season-buttons input[type="radio"]:checked + span {
+    background: #333;
+}
+
+.season-buttons label:hover span {
+    background: #e0e0e0;
+}
+
+
+output {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+/*SİİRLERİM KISMI*/
+
+.poem-title {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em; 
+    margin-bottom: 10px;
+    border-bottom: 2px solid #BDC3C7; 
+    padding-bottom: 5px;
+}
+.poem-title:hover {
+    color: #000000;
+
+
+/*TEKNOLOJİ KİSMİ*/    
+}
+.blog-content {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button .hero-btn {
+    padding: 12px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-button .hero-btn:hover {
+    background: #ff0000;
+}
